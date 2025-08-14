@@ -1,0 +1,40 @@
+//_variables
+// Colors
+$color-black: #333333;
+$color-white: #ffffff;
+$color-navy: #201E47;
+$color-orange: #F3962E;
+
+
+// フォントサイズ
+$font-size-xxs: 0.75rem;   // 12px
+$font-size-xs:  0.875rem;  // 14px
+$font-size-sm:  1rem;      // 16px
+$font-size-md:  1.125rem;  // 18px
+$font-size-lg:  1.25rem;   // 20px
+$font-size-lg2:  1.375rem;   // 22px
+$font-size-xl:  1.5rem;    // 24px
+$font-size-xxl: 2rem;      // 32px
+$font-size-xxxl: 2.5rem;   // 40px
+$font-size-xxxxl: 3rem;    // 48px
+
+// Typography
+$font-family-jp: 'Noto Sans JP', sans-serif;
+$font-size-base: 16px;
+
+// Line Heights
+$line-height-tight: 1.5;
+$line-height-base: 1.75;
+$line-height-relaxed: 2;
+
+// Letter Spacing
+$letter-spacing-base: 0.08em;
+
+// ブレイクポイント
+$breakpoints: (
+  'sm': 670px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1178px,
+  'xxl': 1200px
+);

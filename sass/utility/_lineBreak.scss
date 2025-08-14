@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+// PC、モバイルいずれも改行
+.u-lineBreak {
+  display: block;
+}
+
+// PCのみの改行
+.u-lineBreak--pc {
+  display: block;
+  @include mq(md) {
+    display: inline;
+  }
+}
+
+// モバイルのみの改行
+.u-lineBreak--sp {
+  display: inline;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+// 改行したい位置に以下を配置
+// <span class="u-lineBreak"></span>
+// <span class="u-lineBreak--pc"></span>
+// <span class="u-lineBreak--sp"></span>

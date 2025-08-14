@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+// 基本のフェードインクラス
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s, transform 1s;
+  
+  &.is-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  // 方向バリエーション
+  &--up {
+    transform: translateY(30px);
+  }
+  
+  &--down {
+    transform: translateY(-30px);
+  }
+  
+  &--left {
+    transform: translateX(-30px);
+  }
+  
+  &--right {
+    transform: translateX(30px);
+  }
+}
+
+@media print {
+  .fade {
+    opacity: 1;
+    transform: none;
+  }
+}

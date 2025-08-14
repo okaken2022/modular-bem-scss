@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+html, body {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+body {
+  font-family: $font-family-jp;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+}
+
+a {
+  @include hover-opacity;
+  color: $color-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: $line-height-base;
+}

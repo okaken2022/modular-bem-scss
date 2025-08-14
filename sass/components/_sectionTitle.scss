@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.section__title {
+  text-align: center;
+  @include mq(md) {
+    font-size: $font-size-xl;
+  }
+}
+
